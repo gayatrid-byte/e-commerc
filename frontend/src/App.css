@@ -1,0 +1,19 @@
+/* Minimal app styles so build succeeds */
+:root{
+  --bg: #f7f7fb;
+  --accent: #2563eb;
+  --muted: #6b7280;
+}
+html,body,#root{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);}
+.app{display:flex;flex-direction:column;min-height:100vh;color:#111}
+.header{background:#fff;border-bottom:1px solid #e6e9ef}
+.header-content{max-width:1100px;margin:0 auto;padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+.logo h1{margin:0;font-size:20px}
+.nav{display:flex;gap:8px}
+.nav-btn{background:transparent;border:1px solid transparent;padding:8px 12px;border-radius:6px;cursor:pointer;color:var(--muted)}
+.nav-btn.active{background:var(--accent);color:#fff}
+.main-content{flex:1;max-width:1100px;margin:20px auto;padding:0 16px}
+.footer{background:#fff;border-top:1px solid #e6e9ef;padding:12px;text-align:center;color:var(--muted)}
+
+/* small responsive tweaks */
+@media (max-width:640px){.header-content{padding:10px}.main-content{margin:12px auto;padding:0 12px}}
